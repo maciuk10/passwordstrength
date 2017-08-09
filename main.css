@@ -1,0 +1,44 @@
+html, body {
+    background-color: beige;
+    color: #496694;
+    text-transform: uppercase;
+    font-family: Athiti, sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.password-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 50px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.password-container input {
+    flex-basis: 100%;
+    margin: 10px 0;
+    padding: 30px;
+}
+
+progress {
+    position: relative;
+    flex-basis: 100%;
+}
+
+progress::before {
+    content: 'Siła hasła';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: 300;
+    color: #496694;
+}
